@@ -1,0 +1,120 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+.ScoreTable {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  width: 80%;
+  height: 100%;
+  background-color: white;
+  padding: 1em;
+  font-family: 'Roboto'
+}
+
+.ScoreTable table {
+  width: 100%;
+  margin: 0 auto;
+  min-width: 400px;
+  font-weight: 700;
+}
+
+.ScoreTable-section {
+  vertical-align: top;
+  width: 100%;
+}
+
+.ScoreTable-final {
+  height: 600px;
+  font-size: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.ScoreTable-final input {
+  padding: 0.5em;
+  border-radius: 9999em;
+  border: none;
+  margin: 1em auto;
+  width: 80%;
+  font-size: 0.6em;
+}
+
+.ScoreTable-final input[type="text"] {
+  background-color: #dedae9 !important;
+}
+
+.ScoreTable-buttons {
+  display: flex;
+}
+
+.ScoreTable-final button {
+  width: 40%;
+  padding: 0.5em;
+  border-radius: 9999em;
+  margin: 1em;
+  font-size: 0.5em;
+  background-color: mediumpurple;
+  color: white;
+  cursor: pointer;
+}
+
+.ScoreTable-final button:disabled {
+  background-color: rgb(49, 36, 73);
+}
+
+.ScoreTable-final input:focus, .ScoreTable-final button:focus{
+  outline: none;
+}
+
+.ScoreTable-final h2 {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 1em;
+  border-bottom: 2px solid purple;
+  display: inline-block;
+  font-weight: 100;
+}
+
+.ScoreTable-table {
+  overflow: auto;
+  height: 40em;
+  overflow-y: scroll;
+  font-family: 'BenchNine'
+}
+
+.ScoreTable-tableHeader {
+  background-color: #9941BF;
+  color: white;
+  font-size: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.ScoreTable-tableRow {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+  font-size: 0.6em;
+  font-weight: 300;
+  text-align: left;
+}
+
+.ScoreTable-tableRow .topScore {
+  color: black;
+  font-weight: 700;
+}
+
+.ScoreTable-tableRow .restScore {
+  color: gray;
+}
+
+.ScoreTable-tdScore {
+  font-weight: 700;
+}
+
+@media(max-width: 700px){
+  .ScoreTable{
+    zoom: 85%;
+  }
+}

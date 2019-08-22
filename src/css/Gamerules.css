@@ -1,0 +1,80 @@
+.Gamerules {
+    width: 100%;
+    margin: 0;
+    align-self: center;
+    background: #191340;
+    font-weight: 700;
+    padding: 3em 0;
+    color: white;
+}
+.Gamerules h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: underline;
+}
+.Gamerules .list {
+    overflow: hidden;
+    height: 350px;
+}
+.Gamerules .rules {
+    border: 1px solid white;
+    padding: 1em;
+    width: 85%;
+    font-weight: 300;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1em;
+    word-spacing: 1px;
+    font-size: 1.3rem;
+}
+.Gamerules .rules span {
+    text-align: center;
+    display: block;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin: 0.9em;
+}
+.Gamerules ul {
+    list-style-type: none;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.Gamerules ul li {
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em 0;
+}
+.Gamerules ul li .title {
+    flex-basis: 100%;
+    margin: 0;
+}
+.Gamerules ul li .desc {
+    margin: 0;
+    font-weight: 300;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Gamerules ul li .desc span {
+    flex-basis: 100%
+}
+
+@media(max-width: 700px){
+    .Gamerules ul li{
+        width: 70%;
+    }
+    .Gamerules .rules {
+        width: 80%;
+    }
+}
+
+@media(max-width: 400px){
+    .Gamerules .rules {
+        width: 75%;
+        border: none;
+    }
+}
